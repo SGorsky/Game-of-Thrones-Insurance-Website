@@ -10,7 +10,8 @@ body{
   background-image: url('http://vignette4.wikia.nocookie.net/gameofthrones/images/7/7b/Titan_of_Braavos.jpg/revision/latest?cb=20150504024857');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
+  background-attachment:fixed;
 }
 
 
