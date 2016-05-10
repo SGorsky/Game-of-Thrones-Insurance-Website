@@ -5,16 +5,6 @@
 	     url('gameofthrones.ttf')  format('truetype');
      }
 
-body{
-  /*background-color: black;*/
-  /*background-image: url('http://vignette4.wikia.nocookie.net/gameofthrones/images/7/7b/Titan_of_Braavos.jpg/revision/latest?cb=20150504024857');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment:fixed;*/
-}
-
-
 h1.title1{
   font: 3em 'GoTFont',Times;
   text-align: center;
