@@ -1,0 +1,62 @@
+@font-face {
+	font-family: 'GoTFont';
+  src: url('gameofthrones.woff2') format('woff2'),
+       url('gameofthrones.woff') format('woff'),
+	     url('gameofthrones.ttf')  format('truetype');
+     }
+
+body{
+  background-color: black;
+  /*background-image: url('https://dyn0.media.forbiddenplanet.com/products/115017a.jpg.jpg');
+  background-repeat: no-repeat;
+  background-position:*/
+}
+
+
+h1.title1{
+  font: 3em 'GoTFont',Times;
+  text-align: center;
+  margin-top: 0.5em;
+  color: white
+}
+
+h2.title2{
+  font: 2em 'GoTFont',Times;
+  text-align: center;
+  margin-top: 1em;
+  color: white;
+  line-height: 1.5em
+}
+
+nav ul{
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+  justify-content: center;
+}
+
+nav li{
+  margin-right: 2em;
+  display: inline-block;
+}
+
+a:link, a:visited {
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-style: wavy;
+}
+p{
+  margin-top: auto;
+  color: white;
+  font-size:2em;
+}
+
+footer p{
+  font-size: 1em;
+}
