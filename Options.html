@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="HandheldFriendly" content="true">
     <script data-require="jquery@*" data-semver="2.2.0" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld" />
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" data-semver="3.3.6" data-require="bootstrap@3.3.6"></script>
     <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld" />
     <title>Iron Bank Insurance</title>
   </head>
   <body>
@@ -18,7 +18,7 @@
       <nav>
         <ul>
           <li><a href="Main.html">Home</a></li>
-          <li class="selected"><a href="Options.html">Insurance Options</a></li>
+          <li class="selected"><a href="Options.html">Insurance</a></li>
         </ul>
       </nav>
     </header>
@@ -26,99 +26,82 @@
       <table class="table">
         <thead>
           <tr>
-            <th>Protection Against</th>
-            <th>Naval</th>
-            <th>Home</th>
-            <th>Life</th>
+            <th>Insured Against</th>
+            <th>Naval¹</th>
+            <th>Home²</th>
+            <th>Life³</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Direwolves</th>
-            <td></td>
-            <td></td>
-            <td>✓</td>
+            <th scope="row">Direwolves</th><td></td><td></td><td>✓</td>
           </tr>
           <tr>
-            <th scope="row">Dothraki</th>
-            <td></td>
-            <td>✓</td>
-            <td>✓</td>
+            <th scope="row">Dothraki</th><td></td><td>✓</td><td>✓</td>
           </tr>
           <tr>
-            <th scope="row">Dragons (NEW)</th>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
+            <th scope="row">Dragons (NEW)</th><td>✓</td><td>✓</td><td>✓</td>
           </tr>
           <tr>
-            <th scope="row">Faceless Men</th>
-            <td></td>
-            <td></td>
-            <td>✓</td>
+            <th scope="row">Faceless Men</th><td></td><td></td><td>✓</td>
           </tr>
           <tr>
-            <th scope="row">Hill Tribes</th>
-            <td></td>
-            <td>✓</td>
-            <td>✓</td>
+            <th scope="row">Hill Tribes</th><td></td><td>✓</td><td>✓</td>
           </tr>
           <tr>
-            <th scope="row">Iron Born</th>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
+            <th scope="row">Iron Born</th><td>✓</td><td>✓</td><td>✓</td>
           </tr>
           <tr>
-            <th scope="row">Krakens</th>
-            <td>✓</td>
-            <td></td>
-            <td>✓</td>
+            <th scope="row">Krakens</th><td>✓</td><td></td><td>✓</td>
           </tr>
           <tr>
-            <th scope="row">Manticores</th>
-            <td></td>
-            <td></td>
-            <td>✓</td>
+            <th scope="row">Manticores</th><td></td><td></td><td>✓</td>
           </tr>
           <tr>
-            <th scope="row">Pirates</th>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
+            <th scope="row">Pirates</th><td>✓</td><td>✓</td><td>✓</td>
           </tr>
           <tr>
-            <th scope="row">Shadow Cats</th>
-            <td></td>
-            <td></td>
-            <td>✓</td>
+            <th scope="row">Shadow Cats</th><td></td><td></td><td>✓</td>
           </tr>
           <tr>
-            <th scope="row">Sorrowful Men</th>
-            <td></td>
-            <td></td>
-            <td>✓</td>
+            <th scope="row">Sorrowful Men</th><td></td><td></td><td>✓</td>
           </tr>
           <tr>
-            <th scope="row">Unsullied</th>
-            <td></td>
-            <td></td>
-            <td>✓</td>
+            <th scope="row">Unsullied</th><td></td><td></td><td>✓</td>
           </tr>
           <tr>
-            <th scope="row">White Walkers</th>
-            <td></td>
-            <td></td>
-            <td>✓</td>
+            <th scope="row">White Walkers</th><td></td><td></td><td>✓</td>
           </tr>
           <tr>
-            <th scope="row">Wildlings</th>
-            <td></td>
-            <td></td>
-            <td>✓</td>
+            <th scope="row">Wildlings</th><td></td><td></td><td>✓</td>
           </tr>
         </tbody>
       </table>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <p class="fineprint">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Fine Print</a>
+          </p>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            <p class="fineprint">
+              We, us, our and the Bank mean Iron Bank or a representative of the Iron Bank.<br>
+              You and your means the Policy Owner named in the contract.<br>
+              Beneficiary means the person entitled to receive the Death Benefit when the Designated Life Insured dies.<br>
+              Death Benefit means the amount payable to the Beneficiary when the Life Insured has passed away.<br>
+              Home means the private residence specified in your contract including its lands and structures specified when the contract was made. If addition structures or lands are obtained, please speak with a representative to update your contract.<br>
+              Insurance premium or premiums means the amount you pay to us in consideration for the insurance provided under this contract.<br>
+              Life Insured means a person whose life is insured under this contract and on whose death, the Death Benefit is payable.<br>
+              Representative or representative of the Iron Bank means a person who works for the Iron Bank and represents our values, ideals and can act on behalf of the Iron Bank in any scenario.<br>
+              Shipment or shipment of items refers to the quantity of goods that was insured for the journey.<br><br>
+              ¹Naval Insurance refers to a shipment of items travelling across a body of water on a vessel. The shipment must be stolen, lost or destroyed en route for any benefits to be paid. A representative will examine the shipment of items before departure in order to ascertain the benefit paid if the shipment is lost. The total benefit paid will be no greater than the cost to replace value of the goods lost. If no replacement is possible, the benefit will be triple the value of the goods lost.<br>
+              ²Home Insurance refers to a single structure that we agree to insure against the above hazards. Before the commencement of the contract, a representative will perform a thorough examination of the home to ensure the structure is currently habitable, safe and structurally sound. A representative of the Iron Bank will ensure that the above-mention criteria are no longer met and that the source of the damage was one or more of aforementioned hazards before any benefits are paid. The benefit paid will be equal to the value of the land lost and the amount required to rebuild or restore the structure as best as possible.<br>
+              ³Life Insurance refers to Death Benefit paid upon death of the Life Insured. The body of the Life Insured must be presented to a representative in order for us to ascertain whether the Life Insured is truly deceased. The body’s face must not be disfigured or missing so a representative can recognise the identity of the body. In the event that the representative is unsure of the identity of the body, the representative may take the body of the supposed Life Insured to Braavos in order to examine the body. The body may or may not be returned after thorough examination.<br>
+            </p>
+          </div>
+        </div>
+      </div>
     <footer>
       <p>Brought to you by the Iron Bank of Braavos</p>
     </footer>
