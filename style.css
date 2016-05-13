@@ -42,6 +42,9 @@ nav li{
   display: inline-block;
 }
 
+nav li.selected{
+	font-weight: bold;
+}
 a:link, a:visited {
   font-size: 2em;
   /*color: white;*/
@@ -61,4 +64,9 @@ p{
 
 footer p{
   font-size: 1em;
+}
+
+p.fineprint{
+	font-size: 0.5em;
+	word-wrap: normal;
 }
