@@ -35,10 +35,9 @@ nav li{
 nav li.selected{
 	font-weight: bold;
 }
-a:link, a:visited {
-  font-size: 2em;
-  /*color: white;*/
-  text-decoration: none;
+
+nav a:link, nav a:visited{
+	font-size: 2em;
 }
 
 a:hover{
