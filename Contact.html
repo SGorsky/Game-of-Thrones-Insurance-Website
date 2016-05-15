@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" data-require="bootstrap-css@3.3.6" data-semver="3.3.6" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld" />
+    <script data-require="jquery@*" data-semver="2.2.0" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" data-semver="3.3.6" data-require="bootstrap@3.3.6"></script>
+    <title>Iron Bank Insurance</title>
+  </head>
+  <body>
+    <header>
+      <hgroup>
+        <h1 class="title1">Iron Bank Insurance</h1>
+        <h2 class="title2">An HTML and CSS Demo<br>By Sean Gorsky</h2>
+      </hgroup>
+      <nav>
+        <ul>
+          <li><a href="Main.html">Home</a></li>
+          <li><a href="Options.html">Insurance Options</a></li>
+          <li class="selected"><a href="Contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form class="container" action="MAILTO:sgorsky@rogers.com" method="post" enctype="text/plain">
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Name</span>
+        <input type="text" class="form-control formInput" aria-describedby="basic-addon1" maxlength="20" placeholder="Enter your name here" required name="Name">
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">  Email</span>
+        <input type="email" class="form-control formInput" aria-describedby="basic-addon1" maxlength="30" placeholder="Enter your email here" required name="Email">
+      </div>
+      <div class="panel panel-default">
+        <div  class="panel-heading">Message</div>
+        <div class="panel-body ">
+          <textarea class="form-control" rows="5" placeholder="Enter your message here" name="Message"></textarea>
+        </div>
+      </div>
+      <input type="submit" value="Send">
+    </form>
+
+
+  <footer>
+    <br>
+    <p class="container">Brought to you by the Iron Bank of Braavos</p>
+  </footer>
+  </body>
+</html>
